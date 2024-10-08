@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru" class="app">
+    <head class="app-head">
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' blob:; script-src 'self' 'unsafe-inline' blob:; style-src 'self' 'unsafe-inline';">
+        <title>Darkmoon CSS Helper | CSS Profile</title>
+
+        <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/editor.css">
+    </head>
+    <body class="app-body">
+        <div class="app-title">
+            <span>Создание оформления для профиля</span>
+            <button class="app-close">X</button>
+        </div>
+        <div class="content">
+            <h2>Создание оформления для профиля</h2>
+            <div class="section">
+                <p>Параметр ниже снимает стандартные внтуренние и внешние отступы, будьте аккуратны нажимая данную галку.</p>
+                <label class="form-control">
+                    <input type="checkbox" name="checkbox-disabled" class="css-header-reset"/>
+                    Использовать перезагрузку стилей шапки.
+                </label>
+            </div>
+            <div class="section">
+                <span>Расположение родительских блоков шапки (Логотип + меню аккаунта)</span>
+                <select class="css-header-col-sm-direction">
+                    <option value="unset" selected disabled>Выберите</option>
+                    <option value="row">Линия</option>
+                    <option value="column">Колонна</option>
+                </select>
+            </div>
+            <div class="section">
+                <span>Ссылка на новый логотип:</span>
+                <input type="text" name="" id="" class="css-header-logo-img-url">
+                <span>Ширина логотипа:</span>
+                <input type="text" name="" id="" class="css-header-logo-width">
+                <span>Высота логотипа:</span>
+                <input type="text" name="" id="" class="css-header-logo-height">
+                <p>Размер картинки логотипа может принимать разные значения, смотрите список внизу:</p>
+                <ul>
+                    <li>${width}px ${height}px - ширина и высота соответсвенно</li>
+                    <li>cover - заполнение</li>
+                    <li>contain - живой размер картинки (реальный)</li>
+                </ul>
+                <span>Размер картинки логотипа:</span>
+                <input type="text" name="" id="" class="css-header-logo-img-size">
+            </div>
+            <button class="button btn-apply-css">Применить</button>
+            <button class="button btn-export-css">Экспорт</button>
+        </div>
+
+        <script src="../js/profile.js"></script>
+    </body>
+</html>

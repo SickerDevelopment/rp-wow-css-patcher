@@ -1,0 +1,87 @@
+body
+{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+body::after
+{
+    content: "(C) 2024 Darkmoon";
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-family: GothamPro;
+}
+div.content
+{
+    position: relative;
+    height: calc(100vh - 36px);
+    display: grid;
+    grid-template-rows: 80px 40px 1fr;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 0;
+}
+div.content > h3.title
+{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+div.content > span.subtitle
+{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+    font-family: GothamPro;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+div.content > nav.navigation
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+div.content > nav.navigation > button
+{
+    border: 0px;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.125);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: .25s;
+}
+div.content > nav.navigation > button.dev
+{
+    position: relative;
+}
+div.content > nav.navigation > button.dev::before
+{
+    content: "В разработке";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: rgb(200, 200, 200);
+    background-color: rgba(180, 0, 0, 0.5);
+}
+div.content > nav.navigation > button:hover
+{
+    background-color: rgba(255, 255, 255, 0.25);
+}

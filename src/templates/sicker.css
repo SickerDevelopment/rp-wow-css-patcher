@@ -1,0 +1,87 @@
+body
+{
+    background-image: url("https://i.imgur.com/haUSiNY.jpeg") !important;
+}
+
+header.container > header.row > div.col-sm > a.navbar-brand
+{
+    display: flex;
+    width: 256px;
+    height: 128px;
+
+    background-image: url("https://i.imgur.com/Qukk74H.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header.container > header.row > div.col-sm > a.navbar-brand > img { display: none !important; }
+
+div.icms-header__bottom,
+div.icms-header__bottom > div.container,
+div.icms-header__bottom > div.container > nav.row,
+div.icms-header__bottom > div.container > nav.row > div.col-sm,
+div.icms-header__bottom > div.container > nav.row > div.col-sm > nav.navbar,
+div.icms-header__bottom > div.container > nav.row > div.col-sm > nav.navbar > div.collapse
+{
+    max-width: unset !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+div.icms-header__bottom
+{
+    margin-bottom: 10px !important;
+    z-index: 10;
+}
+div.icms-header__bottom > div.container
+{
+    background-color: transparent;
+}
+div.icms-header__bottom > div.container > nav.row {}
+div.icms-header__bottom > div.container > nav.row > div.col-sm {}
+div.icms-header__bottom > div.container > nav.row > div.col-sm > nav.navbar {}
+div.icms-header__bottom > div.container > nav.row > div.col-sm > nav.navbar > div.collapse {}
+div.icms-header__bottom > div.container > nav.row > div.col-sm > nav.navbar > div.collapse > ul
+{
+    width: 1176px;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 3px;
+    margin: 0px auto !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px;
+}
+div.icms-header__bottom > div.container > nav.row > div.col-sm > nav.navbar > div.collapse > ul > li > a
+{
+    display: flex;
+    flex-direction: row;
+    gap: 0.4em;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.125);
+    transition: .25s;
+}
+div.icms-header__bottom > div.container > nav.row > div.col-sm > nav.navbar > div.collapse > ul > li > a:hover
+{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+div.icms-header__bottom > div.container > nav.row > div.col-sm > nav.navbar > div.collapse > ul > li > a::before
+{
+    content: unset;
+}
+div.icms-header__bottom > div.container > nav.row > div.col-sm > nav.navbar > div.collapse > form
+{
+    display: none !important;
+}
+div.icms-header__bottom > div.container > nav.row > div.col-sm > nav.navbar > button.navbar-toggler
+{
+    display: none !important;
+}
+div.icms-header__bottom {}
+div.icms-header__bottom {}
+div.icms-header__bottom {}

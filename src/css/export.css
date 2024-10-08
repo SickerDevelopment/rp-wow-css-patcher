@@ -1,0 +1,19 @@
+div.content
+{
+    position: relative;
+    height: calc(100vh - 86px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.content > textarea
+{
+    resize: none;
+    width: 1176px;
+    height: 420px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}

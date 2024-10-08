@@ -1,0 +1,104 @@
+@font-face {
+    font-family: GothamProBold;
+    src: url("../fonts/GothamProBold.ttf");
+}
+  
+@font-face {
+    font-family: GothamProMedium;
+    src: url("../fonts/GothamProMedium.ttf");
+}
+  
+@font-face {
+    font-family: GothamPro;
+    src: url("../fonts/GothamProRegular.ttf");
+}  
+@font-face {
+    font-family: GothamProLight;
+    src: url("../fonts/GothamProLight.ttf");
+}
+
+*
+{
+    box-sizing: border-box;
+    outline: none;
+    font-family: GothamPro;
+}
+
+body
+{
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("../images/shared-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div.app-top
+{
+    top: 0px;
+    width: 100%;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+}
+div.app-top > span.page-name
+{
+    display: flex;
+    height: inherit;
+    width: calc(100% - 180px);
+    app-region: drag;
+    box-sizing: border-box;
+    line-height: 36px;
+    padding-left: 10px;
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+}
+div.app-top > div.page-controlls
+{
+    display: flex;
+    height: inherit;
+    width: 180px;
+    justify-content: flex-end;
+    align-items: center;
+}
+div.app-top > div.page-controlls > button
+{
+    display: flex;
+    height: inherit;
+    width: 36px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: .25s;
+    border: 0px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.125);
+    cursor: pointer;
+}
+div.app-top > div.page-controlls > button > svg,
+div.app-top > div.page-controlls > button > i
+{
+    width: 14px;
+}
+div.app-top > div.page-controlls > button:hover
+{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+div.content
+{
+    width: 100%;
+    height: calc(100vh - 46px);
+    /* margin-top: 46px; */
+    overflow-y: auto;
+    padding: 30px;
+}

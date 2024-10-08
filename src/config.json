@@ -1,0 +1,46 @@
+{
+    "windows": {
+        "preload": {
+            "width": 1368,
+            "height": 684,
+            "show": false,
+            "frame": false,
+            "titleBarStyle": "hidden",
+            "resizable": false,
+            "webPreferences": {}
+        },
+        "main": {
+            "width": 1360,
+            "height": 720,
+            "show": false,
+            "frame": false,
+            "titleBarStyle": "hidden",
+            "resizable": false,
+            "webPreferences": {}
+        },
+        "profile": {
+            "width": 1360,
+            "height": 720,
+            "show": false,
+            "autoHideMenuBar": true,
+            "webPreferences": {}
+        },
+        "profile_editor": {
+            "width": 1360,
+            "height": 720,
+            "show": false,
+            "frame": false,
+            "titleBarStyle": "hidden",
+            "webPreferences": {}
+        },
+        "export": {
+            "width": 1360,
+            "height": 720,
+            "show": false,
+            "frame": false,
+            "titleBarStyle": "hidden",
+            "resizable": false,
+            "webPreferences": {}
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "name": "darkmoon-css-patcher",
+    "version": "0.0.4",
+    "description": "Помощник для создание оформления для проекта Darkmoon.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SickerDevelopment/rp-wow-css-patcher.git"
+    },
+    "publish": {
+        "provider": "github",
+        "releaseType": "release"
+    },
+    "build": {
+        "asar": true,
+        "appId": "com.darkmoon.csspatcher",
+        "productName": "Darkmoon CSS Patcher",
+        "nsis": {
+            "oneClick": false,
+            "perMachine": true,
+            "shortcutName": "DMCSS",
+            "installerLanguages": [
+                "ru_RU"
+            ],
+            "allowToChangeInstallationDirectory": true
+        },
+        "directories": {
+            "output": "bin"
+        },
+        "win": {
+            "publish": [
+                "github"
+            ]
+        }
+    },
+    "scripts": {
+        "dev:start": "electron ./src",
+        "dist": "electron-builder",
+        "publish": "electron-builder --publish always"
+    },
+    "keywords": [
+        "CSS",
+        "Darkmoon",
+        "Sicker",
+        "KSS",
+        "Electron",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "NodeJS"
+    ],
+    "author": "Darkmoon Team",
+    "license": "GPL-3.0",
+    "devDependencies": {
+        "electron": "^32.1.0",
+        "electron-builder": "^25.0.5"
+    },
+    "dependencies": {
+        "electron-log": "^5.2.0",
+        "electron-store": "^10.0.0",
+        "electron-updater": "^6.3.4",
+        "feather-icons": "^4.29.2",
+        "jquery": "^3.7.1"
+    }
+}

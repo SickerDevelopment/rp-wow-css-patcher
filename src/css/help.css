@@ -1,0 +1,52 @@
+body
+{
+    padding-top: 36px;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+div.main-content
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: calc(100vh - 36px);
+}
+div.main-content h1,
+div.main-content h2,
+div.main-content h3,
+div.main-content h4,
+div.main-content h5,
+div.main-content h6
+{
+    font-family: GothamProLight;
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+div.main-content h1:last-child,
+div.main-content h2:last-child,
+div.main-content h3:last-child,
+div.main-content h4:last-child,
+div.main-content h5:last-child,
+div.main-content h6:last-child
+{
+    margin-bottom: 0px;
+}
+div.main-content h1:first-child,
+div.main-content h2:first-child,
+div.main-content h3:first-child,
+div.main-content h4:first-child,
+div.main-content h5:first-child,
+div.main-content h6:first-child
+{
+    margin-top: 0px;
+}
+div.main-content p
+{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: GothamPro;
+}

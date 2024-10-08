@@ -1,0 +1,108 @@
+@font-face {
+    font-family: GothamProBold;
+    src: url("../fonts/GothamProBold.ttf");
+}
+  
+@font-face {
+    font-family: GothamProMedium;
+    src: url("../fonts/GothamProMedium.ttf");
+}
+  
+@font-face {
+    font-family: GothamPro;
+    src: url("../fonts/GothamProRegular.ttf");
+}  
+@font-face {
+    font-family: GothamProLight;
+    src: url("../fonts/GothamProLight.ttf");
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+div.app-top
+{
+    width: 100vw;
+    height: 34px;
+    display: grid;
+    grid-template-columns: calc(100vw - 164px) 164px;
+    background-color: rgb(0, 0, 0);
+}
+
+div.app-top > div.title
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    font-family: GothamPro;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    app-region: drag;
+}
+
+div.app-top > div.buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div.app-top > div.buttons > button
+{
+    width: calc(164px / 3);
+    height: 34px;
+    border: 0px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.125);
+    color: rgb(255, 255, 255);
+}
+div.app-top > div.buttons > button > svg {
+    width: 18px;
+    height: 18px;
+}
+div.app-top > div.buttons > button:hover
+{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+div.app-top > div.buttons > button.app-close:hover
+{
+    background-color: rgba(180, 0, 0, 0.75);
+}
+div.app-current-url
+{
+    font-family: GothamPro;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.app-current-url > input
+{
+    width: calc(100% - 40px);
+    height: 26px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.125);
+    border: 0px;
+    color:rgb(255, 255, 255);
+    font-family: GothamPro;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
