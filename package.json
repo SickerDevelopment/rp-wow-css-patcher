@@ -2,7 +2,7 @@
     "name": "darkmoon-css-patcher",
     "version": "0.0.4",
     "description": "Помощник для создание оформления для проекта Darkmoon.",
-    "main": "index.js",
+    "main": "./src/index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/SickerDevelopment/rp-wow-css-patcher.git"
@@ -18,7 +18,7 @@
         "nsis": {
             "oneClick": false,
             "perMachine": true,
-            "shortcutName": "DMCSS",
+            "shortcutName": "Darkmoon CSS",
             "installerLanguages": [
                 "ru_RU"
             ],
@@ -30,13 +30,14 @@
         "win": {
             "publish": [
                 "github"
-            ]
+            ],
+            "icon": "./src/images/icon.png"
         }
     },
     "scripts": {
         "dev:start": "electron ./src",
-        "dist": "electron-builder",
-        "publish": "electron-builder --publish always"
+        "dev:build": "electron-builder",
+        "dev:publish": "electron-builder --publish always"
     },
     "keywords": [
         "CSS",

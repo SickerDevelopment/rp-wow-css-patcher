@@ -25,8 +25,13 @@ window.ipcRenderer.receive(
 );
 window.ipcRenderer.receive(
     "app-debug-mode", () => {
-        alert("Debug mode enabled!");
         $(".description.updating > div.info > span.blink").remove();
         $(".description.updating > div.info").html(`<span class="blink">Программа в режиме отладки...</span>`);
+    }
+);
+window.ipcRenderer.receive(
+    "app-test-mode", () => {
+        $(".description.updating > div.info > span.blink").remove();
+        $(".description.updating > div.info").html(`<span class="blink">Программа в стадии тестирования, пожалуйста не закрывайте это окно...</span>`);
     }
 );

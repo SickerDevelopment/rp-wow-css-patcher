@@ -15,7 +15,6 @@ const ipc = {
             "app-update-downloaded",
             "app-update-download-available",
             "app-update-download-not-available",
-            "app-debug-mode",
             // Window SignaLS
             "window-close",
             "window-request-close",
@@ -25,6 +24,8 @@ const ipc = {
         // From main to render
         "receive": [
             "app-export-code",
+            "app-debug-mode",
+            "app-test-mode"
         ],
         // From main to render (once)
         "receiveOnce": [],

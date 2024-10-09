@@ -24,6 +24,10 @@ div.content
     height: calc(100vh - 36px);
     display: grid;
     grid-template-rows: 80px 40px 1fr;
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    background-position: 50px 10px;
+    background-size: 100px;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     padding: 0;

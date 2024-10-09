@@ -84,6 +84,7 @@ main.whenReady().then( () => {
                 );
                 if(app.isPackaged == false)
                 {
+                    console.log("Development/debug mode enabled.");
                     //pools.preload.hide();
                     pools.preload.send("app-debug-mode");
                     pools.main = new BrowserWindow(config.windows.main);
@@ -91,11 +92,19 @@ main.whenReady().then( () => {
                     pools.main.on( "ready-to-show", () => pools.main.show() );
                     pools.main.on(
                         "close", () => { app.exit(0); }
-                    )
+                    );
                 }
                 else
                 {
-                    autoUpdater.checkForUpdates();
+                    // Todo: Enable autoupdate later.
+                    // autoUpdater.checkForUpdates();
+                    pools.preload.send("app-test-mode");
+                    pools.main = new BrowserWindow(config.windows.main);
+                    pools.main.loadFile(path.join(__dirname, "./windows/main.html"));
+                    pools.main.on( "ready-to-show", () => pools.main.show() );
+                    pools.main.on(
+                        "close", () => { app.exit(0); }
+                    )
                 }
             }
         );
