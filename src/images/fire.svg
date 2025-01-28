@@ -1,6 +1,6 @@
 <svg>
     <filter id="fire">
         <feTurbulence id="turbulence" baseFrequence="0.1 0.1" numOctaves="2" seed="3"></feTurbulence>
-        <feDisplacementMap in="SourceGraphic" in="turbulence" scale="20"></feDisplacementMap>
+        <feDisplacementMap in="SourceGraphic" scale="20"></feDisplacementMap>
     </filter>
 </svg>
